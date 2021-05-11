@@ -72,6 +72,8 @@
     }
 
     async function getUserProfile() {
+      const profile = await liff.getProfile();
+      document.getElementById('userId').append(profile.UserId);
     }
 
     function getEnvironment() {
